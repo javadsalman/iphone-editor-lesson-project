@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+$border-color: rgb(197, 197, 197);
+
+.container {
+    width: 60%;
+    min-width: 800px;
+    min-height: 600px;
+    height: 90%;
+    display: flex;
+    border: 2px solid $border-color;
+}
+
+.phone-wrapper {
+    flex-basis: 60%;
+    border: 2px solid $border-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .iphone {
+        width: 70%;
+        height: 90%;
+        max-height: 600px;
+        max-width: 300px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border: 1px solid rgba(128, 128, 128, 0.39);
+        position: relative;
+        transition-duration: 500ms;
+        border-radius: 5px;
+        .model-name {
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            bottom: 40px;
+            font-size: 14px;
+        }
+    }
+    .gold-gradient {
+        background: linear-gradient(to bottom, #eac464 0%,#edc721 100%);
+    }
+    .black-gradient {
+        background: linear-gradient(to bottom, #211d0e 0%,#2a2b29 26%,#232323 81%,#1b1c1b 100%);
+    }
+    .white-gradient {
+        background: linear-gradient(to bottom, #ffffff 0%,#e2e2e2 26%,#e0e0e0 81%,#f7fffc 100%);
+    }
+    .dark-blue-gradient {
+        background: linear-gradient(to bottom, #00083f 0%,#2c327a 26%,#00275b 65%,#000651 100%);
+    }
+    .edge {
+        border-radius: 15px;
+    }
+}
+
+.assets {
+    flex-basis: 40%;
+    border: 2px solid $border-color;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2fr 5fr;
+}
+
+
+.items {
+    border: 2px solid $border-color;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: start;
+    gap: 15px;
+}
+
+form {
+    border: 2px solid $border-color;
+    padding: 20px;
+}
+
+.big-camera {
+    $size: 50px;
+    width: $size;
+    height: $size;
+    background-color: rgb(21, 21, 21);
+    border-radius: 50%;
+    border: 5px solid rgb(59, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    .lens {
+        width: 65%;
+        height: 65%;
+        background-color: rgb(67, 67, 67);
+        border-radius: 50%;
+    }
+}
+
+.small-camera {
+    $size: 30px;
+    width: $size;
+    height: $size;
+    background-color: rgb(21, 21, 21);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    .lens {
+        width: 65%;
+        height: 65%;
+        background-color: rgb(67, 67, 67);
+        border-radius: 50%;
+    }
+}
+
+.flash {
+    $size: 25px;
+    width: $size;
+    height: $size;
+    background-color: rgb(229, 241, 3);
+    border-radius: 50%;
+    display: flex;
+    border: 4px solid rgb(131, 131, 42);
+    cursor: pointer;
+}
+
+.logo {
+    width: 40px;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.radio-groups {
+    display: flex;
+    gap: 10px;
+    margin-top: 3px;
+}
+
+input {
+    outline: none;
+    padding: 5px;
+    font-size: 18px;
+}
